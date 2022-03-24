@@ -1,0 +1,202 @@
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+
+header {
+   display: flex;
+   min-height: 70px;
+   background: rgb(57,56,62);
+   background: radial-gradient(circle, rgba(57,56,62,1) 8%, rgba(41,41,46,1) 38%, rgba(41,41,46,1) 61%, rgba(38,37,42,1) 78%, rgba(41,40,43,1) 94%, rgba(47,54,54,1) 100%, rgba(27,27,28,1) 100%);
+   justify-content: space-between;
+   align-items: center;
+   padding: 10px 40px;
+
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    height: 100px;
+    margin-right: 10px;
+}
+
+.nombre-empresa {
+     display: flex;
+     color: orange;
+}
+
+li {
+    display: inline;
+    text-align: left;
+    font-size: 40px;
+}
+
+a {
+    text-decoration: none;
+    color: orange;
+}
+
+p {
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-weight: bold;
+}
+
+
+body {
+    background: rgb(32,20,68);
+    background: linear-gradient(94deg, rgba(32,20,68,1) 0%, rgba(40,34,52,1) 49%, rgba(55,50,74,1) 100%);
+}
+
+
+.padre {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.padre div {
+    background: rgb(161,26,39);
+background: linear-gradient(291deg, rgba(161,26,39,1) 0%, rgba(111,40,47,1) 50%, rgba(140,74,74,1) 100%);
+    border: 1px solid black;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+
+.bienvenida {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(104, 42, 42);
+    border: solid rgb(245, 167, 167);
+    font-size: 30px;
+    text-align: center;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+
+.cajita {
+    height: 250px;
+   width: 200px;
+    background-color: rgb(51, 46, 68);
+    border: solid black 1px;
+    overflow: hidden;
+    margin-top: 10px;
+    margin-left: 5px;
+    text-align: center;
+}
+
+.cajita2 {
+    height: 250px;
+   width: 200px;
+    background-color: rgb(89, 42, 42);
+    border: solid black 1px;
+    overflow: hidden;
+    margin-top: 10px;
+    margin-left: 5px;
+    text-align: center;
+}
+
+.cajita img{
+    width: 100px;
+}
+
+.cajita2 img{
+    width: 100px; 
+}
+
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    border: solid 5px;
+    margin-top: 3%;
+    background-color: rgb(89, 42, 42);
+}
+    
+label {
+    background-color: rgb(51, 46, 68);
+    border: solid 1px;
+    font-size: 25px;
+}
+
+input {
+     margin-left: 10px;
+     margin-bottom: 5px;
+     padding: 2px;
+}
+
+
+.video {
+    text-align: center;
+}
+
+.grupo {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.inicio {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    border: solid rgb(36, 29, 27);
+    background-color: rgb(49, 44, 68);
+    box-shadow: 2px -2px 2px 0px #1f1d1d;
+}
+
+@media (max-width: 700px) {
+    .padre div {
+        background: rgb(161,26,39);
+    background: linear-gradient(291deg, rgba(161,26,39,1) 0%, rgba(111,40,47,1) 50%, rgba(140,74,74,1) 100%);
+        border: 1px solid black;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        grid-column: 1/ span 4;
+    }
+    
+    
+   
+}
+
+.padre_galeria {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: span 3;
+    grid-auto-rows: 300px;
+}
+
+.padre_galeria img {
+   width: 500px;
+}
+
+
+
+@media (max-width: 1000px) {
+    .padre_galeria {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: span 3;
+        grid-auto-rows: 300px;
+    }
+}
