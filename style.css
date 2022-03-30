@@ -7,88 +7,36 @@
 
 
 header {
-   display: flex;
-   min-height: 70px;
-   background: rgb(57,56,62);
-   background: radial-gradient(circle, rgba(57,56,62,1) 8%, rgba(41,41,46,1) 38%, rgba(41,41,46,1) 61%, rgba(38,37,42,1) 78%, rgba(41,40,43,1) 94%, rgba(47,54,54,1) 100%, rgba(27,27,28,1) 100%);
-   justify-content: space-between;
-   align-items: center;
-   padding: 10px 40px;
+   text-align: end;
+   background: rgb(64,46,116);
+   background: linear-gradient(94deg, rgba(64,46,116,1) 0%, rgba(61,40,120,1) 51%, rgba(45,37,74,1) 100%);
+  
+ }
 
-}
-
-.logo {
+.presentacion {
     display: flex;
-    align-items: center;
+     text-align: center;
+    background-color: rgb(13, 13, 29);
+    margin-top: 40px;
+    padding: 10px;
+
 }
 
-.logo img{
-    height: 100px;
-    margin-right: 10px;
-}
 
-.nombre-empresa {
-     display: flex;
-     color: orange;
-}
 
-li {
-    display: inline;
-    text-align: left;
-    font-size: 40px;
-}
-
-a {
-    text-decoration: none;
-    color: orange;
-}
 
 p {
     list-style: none;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 900;
     font-weight: bold;
+    color: rgb(118, 68, 31);
 }
 
 
 body {
-    background: rgb(32,20,68);
-    background: linear-gradient(94deg, rgba(32,20,68,1) 0%, rgba(40,34,52,1) 49%, rgba(55,50,74,1) 100%);
-}
-
-
-.padre {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto auto;
-    justify-content: space-between;
-    margin: 10px;
-}
-
-.padre div {
-    background: rgb(161,26,39);
-background: linear-gradient(291deg, rgba(161,26,39,1) 0%, rgba(111,40,47,1) 50%, rgba(140,74,74,1) 100%);
-    border: 1px solid black;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-}
-
-
-.bienvenida {
-    display: flex;
-    justify-content: center;
-    background-color: rgb(104, 42, 42);
-    border: solid rgb(245, 167, 167);
-    font-size: 30px;
-    text-align: center;
-}
-
-.info {
-    display: flex;
-    align-items: center;
-    font-size: 20px;
-    text-align: center;
+    background: rgb(34,18,82);
+    background: linear-gradient(94deg, rgba(34,18,82,1) 0%, rgba(32,24,52,1) 51%, rgba(30,17,77,1) 100%);
 }
 
 
@@ -128,11 +76,15 @@ background: linear-gradient(291deg, rgba(161,26,39,1) 0%, rgba(111,40,47,1) 50%,
 footer {
     display: flex;
     justify-content: center;
-    border: solid 5px;
+    border: solid 5px rgb(59, 59, 114);
     margin-top: 3%;
     background-color: rgb(89, 42, 42);
 }
-    
+
+footer a {
+    text-decoration: none;
+}
+
 label {
     background-color: rgb(51, 46, 68);
     border: solid 1px;
@@ -198,5 +150,5 @@ input {
         grid-template-columns: repeat(1,1fr);
         grid-template-rows: span 3;
         grid-auto-rows: 300px;
+
     }
-}

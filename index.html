@@ -5,43 +5,79 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Asourcediados</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-      <div class="logo">
-          <img src="images/logo.png" alt="">
-      </div>
-      <div>
-        <h2 class="nombre-empresa">Asourciados</h2>
-      </div>
-        
-        <nav>
-            
-            <ul>
-                <li> <a href="index.html"> Inicio</a> </li>
-                <li> <a href="informacion.html"> Información </a> </li>
-                <li> <a href="ubicacion.html"> Ubicacion</a> </li>
-                <li> <a href="galeria.html"> Galería </a> </li>
-                <li> <a href="contacto.html"> Contacto </a></li>
-            </ul>
-
-        </nav>
+     
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">Asourciados</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="informacion.html">Informacion</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="galeria.html">Galeria</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="ubicacion.html">Ubicacion</a>
+                  </li>
+                </ul>
+    
+              </div>
+            </div>
+          </nav>
+          
        
     </header>
     <main>
        
-        <div class="padre">
-            <div class="bienvenida"> <p  class="bienvenida">¡Bienvenidos a Asourcediados!</p></div>
-            <div class="video"> <iframe width="560" height="315" src="https://www.youtube.com/embed/WMPeJUN62EY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-            <div class="info"><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus, ipsam laborum? Quae officia iste est quasi, dolores corporis autem quas, reprehenderit nesciunt reiciendis inventore laboriosam, voluptate praesentium iure doloremque possimus.</p></div>
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="presentacion">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/WMPeJUN62EY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+              <div class="carousel-item">
+                <p> ¡Bienvenido a Asourciados!</p>
+              </div>
+              <div class="carousel-item">
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit odit, porro exercitationem aliquam debitis in voluptate sunt, incidunt rerum, doloremque eum placeat? Modi recusandae eos mollitia quos expedita enim corporis.
+                Incidunt voluptatibus ipsum saepe earum maiores quo facere? Esse explicabo placeat officiis in odio maxime sit, odit quia possimus voluptatum. Numquam earum impedit, perferendis natus nam aut nobis dolorem aspernatur.
+                Aperiam expedita deleniti itaque dolorem tenetur voluptas ipsam dolore veritatis quidem atque eligendi provident vitae fugit, dignissimos impedit possimus laborum aut, alias, minus vero nobis nemo? Optio sequi rem quia!
+                Quam tempora iusto pariatur sit quaerat minus asperiores sunt! Illum officia explicabo sequi tempore accusantium omnis qui, cumque eveniet autem, perferendis, doloremque pariatur deserunt nobis molestias reprehenderit eaque soluta hic!
+                Modi harum aperiam voluptate officiis eos eaque itaque voluptas ducimus ipsam necessitatibus nobis illum qui recusandae dolores nam eius commodi maiores enim sunt similique, doloremque magni! Earum, unde. Culpa, sequi?
+                Nesciunt earum unde ratione. Vel id ipsam distinctio laborum in nobis voluptatibus repudiandae rerum similique, suscipit deleniti natus dolor maxime ipsum fugiat officiis sed earum reiciendis enim necessitatibus voluptate temporibus.
+                Repellat itaque nemo iure cum eius voluptatem omnis velit quae atque architecto, ut facilis saepe impedit. Tempora, tenetur. Fugiat ducimus dolore sit accusamus sint eveniet aspernatur non officia maiores fugit.
+                Iure quam voluptatum illo ipsum similique, eligendi, dignissimos animi adipisci a soluta minima temporibus quidem, porro mollitia eos reiciendis maxime laudantium ab eum! Minus rem cum, sunt architecto enim illum.
+                Consequatur qui laudantium pariatur excepturi cumque laborum voluptas praesentium blanditiis mollitia reprehenderit quos eligendi dolorem fuga neque sint ducimus incidunt dignissimos aliquid earum, aut sunt quo atque recusandae assumenda. Autem!
+                Nulla facere nemo maiores accusamus a soluta dolor distinctio dolorum nam ipsam, alias exercitationem, veniam labore ex, et magni. Nulla ut at fugit minima temporibus repellendus eos iure, velit voluptas.</p>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
         </div>
- 
-      
     </main>
     <footer>
         <p class="blue">Creado por Matias Bordón, estudiante de <a href="https://www.coderhouse.com/?utm_term=coderhouse&utm_campaign=12058006243&utm_source=google_search_brand&utm_medium=cpc&gclid=Cj0KCQiAjc2QBhDgARIsAMc3SqR0leTD6XLbdfNAPjX8wBxlF5jwcmUuOOMywxA1JIV_z9WvN_lDP_waAlKfEALw_wcB">Coderhouse</a></p> 
         
     </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> 
 </body>
 </html>
