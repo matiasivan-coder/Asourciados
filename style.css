@@ -13,17 +13,6 @@ header {
   
  }
 
-.presentacion {
-    display: flex;
-     text-align: center;
-    background-color: rgb(13, 13, 29);
-    margin-top: 40px;
-    padding: 10px;
-
-}
-
-
-
 
 p {
     list-style: none;
@@ -154,4 +143,13 @@ input {
  }
 
  
+}
+
+.presentacion {
+    display: flex;
+     text-align: center;
+    background-color: rgb(13, 13, 29);
+    margin-top: 40px;
+    padding: 10px;
+
 }
