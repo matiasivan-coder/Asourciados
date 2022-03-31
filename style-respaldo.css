@@ -33,25 +33,17 @@ body {
 .cajita {
     height: 250px;
     width: 200px;
-    background-color: rgb(113, 73, 245);
+    background-color: rgb(51, 46, 68);
     border: solid black 1px;
     overflow: hidden;
     margin: 40px;
     text-align: center;
 }
 
-.cajita p {
-    color: black;
-}
-
-.cajita2 p {
-    color: black;
-}
-
 .cajita2 {
     height: 250px;
    width: 200px;
-    background-color: rgb(74, 108, 244);
+    background-color: rgb(89, 42, 42);
     border: solid black 1px;
     overflow: hidden;
     margin-top: 40px;
@@ -74,15 +66,8 @@ footer {
     justify-content: center;
     border: solid 5px rgb(59, 59, 114);
     margin-top: 3%;
-    background-color: rgb(37, 31, 57);
+    background-color: rgb(89, 42, 42);
 }
-
-footer p {
-    color: black;
-}
-
-
-
 
 footer a {
     text-decoration: none;
@@ -186,4 +171,3 @@ a:hover {
     padding: 10px;
 
 }
-
