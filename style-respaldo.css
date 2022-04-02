@@ -96,13 +96,7 @@ input {
 }
 
 
-.inicio {
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    border: solid rgb(36, 29, 27);
-    background-color: rgb(49, 44, 68);
-    box-shadow: 2px -2px 2px 0px #1f1d1d;
-}
+
 
 @media (max-width: 700px) {
     .padre div {

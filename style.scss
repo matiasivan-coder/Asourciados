@@ -1,0 +1,145 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+
+header {
+    text-align: end;
+    background: rgb(64,46,116);
+    background: linear-gradient(94deg, rgba(64,46,116,1) 0%, rgba(61,40,120,1) 51%, rgba(45,37,74,1) 100%);  
+}
+
+p {
+        list-style: none;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 900;
+        font-weight: bold;
+        color: rgb(44, 40, 157); 
+       }  
+
+ body {
+            background: rgb(34,18,82);
+            background: linear-gradient(94deg, rgba(34,18,82,1) 0%, rgba(32,24,52,1) 51%, rgba(30,17,77,1) 100%); 
+        } 
+        
+.grupo {
+    display: flex;
+    justify-content: space-around;   
+    .cajita {
+        height: 300px;
+        width: 500px;
+        background-color: rgb(29, 31, 98);
+        border: solid black 1px;
+        overflow: hidden;
+        margin: 40px;
+        text-align: center;
+        h3 {
+            color: rgb(76, 76, 177);
+            }
+        p {
+           color: black;
+           }
+       img {
+           width: 100px;
+        }
+       
+   }
+   
+   .cajita2 {
+       height: 300px;
+        width: 500px;
+        background-color: rgb(29, 31, 98);
+        border: solid black 1px;
+        overflow: hidden;
+        margin: 40px;
+        text-align: center;
+        h3 {
+            color: rgb(76, 76, 177);
+            }
+        p {
+           color: black;
+           }
+       img {
+           width: 100px;
+        }
+       
+   }
+}
+
+.padre_galeria {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: span 3;
+    grid-auto-rows: 300px;
+    margin-top: 50px;
+    img {
+        width: 500px;
+    }
+}
+
+.grupo:hover {
+    .cajita:hover{ 
+     box-shadow: 1px 1px 3px 1px rgb(0, 0, 0);
+    transform: scale(1.5);
+    }
+
+    .cajita2:hover {  box-shadow: 1px 1px 3px 1px rgb(0, 0, 0);
+    transform: scale(1.5);
+
+    }
+
+}
+
+a:hover {
+    transform: scale(1.2);
+}
+
+footer {
+    background-color: rgb(52, 28, 94);
+    border: 1px solid rgb(80, 80, 168);
+
+    p {
+        text-align: center;
+    }
+
+    a {
+        text-decoration: none;
+    }
+}
+
+.presentacion  {
+    display: flex;
+    text-align: center;
+    background-color: rgb(13, 13, 29);
+    margin-top: 40px;
+    padding: 10px;
+
+}
+
+.padre_galeria img:hover {
+    transform: scale(1.2);
+}
+
+.contacto {
+
+
+    label {
+    background-color: rgb(44, 21, 117);
+    border: solid 1px blue;
+    font-size: 25px;
+    color: black;
+}
+
+input {
+     margin-left: 10px;
+     margin-bottom: 5px;
+     padding: 2px;
+}
+
+ }
+
+.mapa { 
+    text-align: center;
+}

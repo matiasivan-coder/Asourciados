@@ -1,0 +1,47 @@
+{
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.15"
+  },
+  "name": "asourciados",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "async-foreach": "^0.1.3",
+    "chalk": "^4.1.2",
+    "chokidar": "^3.5.3",
+    "cross-spawn": "^7.0.3",
+    "gaze": "^1.1.3",
+    "get-stdin": "^4.0.1",
+    "glob": "^7.2.0",
+    "ignore-by-default": "^1.0.1",
+    "lodash": "^4.17.21",
+    "meow": "^9.0.0",
+    "minimatch": "^3.1.2",
+    "nan": "^2.15.0",
+    "node-gyp": "^8.4.1",
+    "npmlog": "^5.0.1",
+    "pstree.remy": "^1.1.8",
+    "request": "^2.88.2",
+    "sass-graph": "^4.0.0",
+    "stdout-stream": "^1.4.1",
+    "touch": "^3.1.0",
+    "true-case-path": "^1.0.3",
+    "undefsafe": "^2.0.5",
+    "update-notifier": "^5.1.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matiasivan-coder/Asourciados.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/matiasivan-coder/Asourciados/issues"
+  },
+  "homepage": "https://github.com/matiasivan-coder/Asourciados#readme",
+  "description": ""
+}
