@@ -30,6 +30,8 @@ body {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -webkit-transition: all 2s linear;
+  transition: all 2s linear;
 }
 
 .grupo .cajita {
@@ -40,6 +42,8 @@ body {
   overflow: hidden;
   margin: 40px;
   text-align: center;
+  -webkit-transition: all 2s linear;
+  transition: all 2s linear;
 }
 
 .grupo .cajita h3 {
@@ -62,6 +66,8 @@ body {
   overflow: hidden;
   margin: 40px;
   text-align: center;
+  -webkit-transition: all 2s linear;
+  transition: all 2s linear;
 }
 
 .grupo .cajita2 h3 {
@@ -79,31 +85,32 @@ body {
 .padre_galeria {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1FR) 3;
-  grid-template-columns: repeat(3, 1fr);
+  -ms-grid-columns: (1fr);
+      grid-template-columns: repeat(3, 1fr);
   -ms-grid-rows: span 3;
       grid-template-rows: span 3;
   grid-auto-rows: 300px;
   margin-top: 50px;
 }
 
-
 .padre_galeria img {
   width: 500px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 
 .grupo:hover .cajita:hover {
   -webkit-box-shadow: 1px 1px 3px 1px black;
           box-shadow: 1px 1px 3px 1px black;
-  -webkit-transform: scale(1.5);
-          transform: scale(1.5);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .grupo:hover .cajita2:hover {
   -webkit-box-shadow: 1px 1px 3px 1px black;
           box-shadow: 1px 1px 3px 1px black;
-  -webkit-transform: scale(1.5);
-          transform: scale(1.5);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 a:hover {
@@ -135,8 +142,8 @@ footer a {
 }
 
 .padre_galeria img:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .contacto label {
@@ -150,5 +157,9 @@ footer a {
   margin-left: 10px;
   margin-bottom: 5px;
   padding: 2px;
+}
+
+.mapa {
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
