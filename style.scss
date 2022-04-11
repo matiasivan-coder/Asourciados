@@ -4,19 +4,19 @@
     box-sizing: border-box;
 }
 
+@import url(_extend.scss);
+@import url(_mapas.scss);
 
 header {
     text-align: end;
-    background: rgb(64,46,116);
-    background: linear-gradient(94deg, rgba(64,46,116,1) 0%, rgba(61,40,120,1) 51%, rgba(45,37,74,1) 100%);  
+    background: rgb(39, 31, 64);
 }
 
 p {
         list-style: none;
         font-family: Arial, Helvetica, sans-serif;
-        font-weight: 900;
-        font-weight: bold;
-        color: rgb(44, 40, 157); 
+        font-weight: $display;
+        color: $display; 
        }  
 
  body {
@@ -24,61 +24,54 @@ p {
             background: linear-gradient(94deg, rgba(34,18,82,1) 0%, rgba(32,24,52,1) 51%, rgba(30,17,77,1) 100%); 
         } 
         
+
+.informacion_titulo {
+    h1 {
+        @extend %flex;
+        color: $display;
+        border: solid 1px;
+    } 
+}
+
 .grupo {
-    display: flex;
-    justify-content: space-around; 
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-auto-rows: 600px;
     transition: all 2s linear;  
-    .cajita {
-        height: 300px;
-        width: 500px;
-        background-color: rgb(29, 31, 98);
-        border: solid black 1px;
-        overflow: hidden;
-        margin: 40px;
-        text-align: center;
-        transition: all 2s linear; 
-        h3 {
-            color: rgb(76, 76, 177);
-            }
-        p {
-           color: black;
-           }
-       img {
-           width: 100px;
+    padding: 50px;
+
+    p {
+        color: $display;
+        font-size: $display;
         }
-       
-   }
+
+    .cajita {
+        @extend %cajita; 
+
+        }
    
    .cajita2 {
-       height: 300px;
-        width: 500px;
-        background-color: rgb(29, 31, 98);
-        border: solid black 1px;
-        overflow: hidden;
-        margin: 40px;
-        text-align: center;
-        transition: all 2s linear; 
-        h3 {
-            color: rgb(76, 76, 177);
-            }
-        p {
-           color: black;
-           }
-       img {
-           width: 100px;
-        }
+        @extend %cajita;
        
    }
 }
 
+.galeria_introduccion {
+         h1 {
+             margin-top: 20px;
+             @extend %flex;
+             color: $display;
+             border: solid 1px;
+         }
+}
+
 .padre_galeria {
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: span 3;
-    grid-auto-rows: 300px;
+    @extend %grid;
     margin-top: 50px;
+    padding: 20px;
     img {
         width: 500px;
+        padding: 9px;
         transition: all 1s;
     }
 }
@@ -86,11 +79,11 @@ p {
 .grupo:hover {
     .cajita:hover{ 
      box-shadow: 1px 1px 3px 1px rgb(0, 0, 0);
-    transform: scale(1.1);
+    transform: scale(1.05);
     }
 
     .cajita2:hover {  box-shadow: 1px 1px 3px 1px rgb(0, 0, 0);
-    transform: scale(1.1);
+    transform: scale(1.05);
 
     }
 
@@ -101,8 +94,8 @@ a:hover {
 }
 
 footer {
-    background-color: rgb(52, 28, 94);
-    border: 1px solid rgb(80, 80, 168);
+    background-color: $display;
+    border: 1px solid $display;
 
     p {
         text-align: center;
@@ -126,24 +119,141 @@ footer {
     transform: scale(1.1);
 }
 
-.contacto {
-
-
-    label {
-    background-color: rgb(44, 21, 117);
-    border: solid 1px blue;
-    font-size: 25px;
-    color: black;
+.contacto_titulo {
+            h1 {
+                text-align: center;
+                color: $display;
+                border: solid 1px;
+            }
 }
+
+.contacto {
+    @extend grid;
+
+    .formulario {
+        margin-top: 100px;
+        padding: 50px;
+        @include flex(flex, center, flex-end);
+    }
+    
+    label {
+    
+    background-color: $display;
+    font-size: $display;
+     color: $display;
+
+}
+
 
 input {
      margin-left: 10px;
      margin-bottom: 5px;
      padding: 2px;
+
+     
+}
+
+.imagen_contacto {
+    display: grid;
+    grid-row: span 2;
+    background-image: url(images/individuales_chicos/contacto.jpeg);
+    background-size: cover;
+     h1 {
+        @extend %flex;
+        color: $display;
+      }
 }
 
  }
 
-.mapa { 
-    text-align: center;
-}
+
+
+.imagen {
+    @extend %grid;
+    margin-top: 50px;
+    margin-bottom: 20px;
+
+    img {
+        height: 100%;
+        width: 100%;
+    }
+  
+    .texto {
+        display: grid;
+        grid-row: span 2;
+        background-color: $display;
+        
+        p {
+            @extend %flex;
+            margin-left: 100px;
+            font-size: 52px;
+        }
+        
+     
+    }
+   
+    .spy {
+        background-image: url(images/individuales_chicos/poster5.png);
+        background-size: cover;
+        grid-row: span 2;
+        grid-column: span 2;
+
+        h3 {
+            @extend %flex;
+            margin-top: 500px;
+            color: rgb(180, 222, 234);
+            font-weight: 200px;
+            font-size: 72px;
+        }
+    } 
+
+  
+ 
+    
+    }
+
+    .carousel-item {
+         p {
+             font-size: 24px;
+         }
+    }
+ .ubicacion {
+     @extend grid;
+    .texto_ubicacion {
+        grid-column: span 3;
+        grid-row: 1;
+        
+        h1 {
+           @extend %flex;
+           color: $display;
+           border: solid 1px;
+        }
+} 
+ .imagen_ubicacion {
+     grid-column: span 2;
+     grid-row: span 1;
+        img{ 
+            width: 100%;
+            height: 100%;
+            padding: 50px;
+            margin-bottom: 100px;
+            
+        }  
+ }
+  
+ .mapa {
+     grid-row: span 2;
+     width: 100%;
+     height: 100px;
+     padding: 50px;
+     
+
+     iframe {
+         width: 600px;
+     }
+ }
+  
+ }
+ 
+
+
