@@ -220,7 +220,7 @@ input {
  .ubicacion {
      @extend grid;
     .texto_ubicacion {
-        grid-column: span 3;
+        grid-column: span 2;
         grid-row: 1;
         
         h1 {
