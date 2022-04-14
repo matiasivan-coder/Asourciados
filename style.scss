@@ -4,23 +4,64 @@
     box-sizing: border-box;
 }
 
-@import url(_mapas.scss);
-@import url(_extend.scss);
+    %grid {
+        display: grid;
+        grid-auto-rows: 300px;
+        grid-template-columns: 1fr 1fr 1fr;
+       }
+       
 
+       %cajita {
+           margin: 10px;
+           background-color: rgb(21, 21, 42);
+            border: solid black 1px;
+            overflow: hidden;
+            text-align: center;
+            transition: all 0.5s linear; 
+       
+            h3 {
+               color: rgb(76, 76, 177);
+               }
+       
+            img {
+              width: 100px;
+           }
+          
+       }
+       
+       %flex {
+           display: flex;
+           justify-content: center;
+           align-items: center;
+       }
 
+       %flex2 {
+           display: flex;
+           justify-content: flex-start;
+           align-items: left;
+       }
+       
+       @mixin flex ($coso, $justify, $alinear ) {
+           display: $coso;
+           justify-content: $justify;
+           align-items: $alinear;
+       }
+
+      
+    
 
 
 
 header {
-    text-align: start;
+    text-align: end;
     background: rgb(39, 31, 64);
 }
 
 p {
         list-style: none;
         font-family: Arial, Helvetica, sans-serif;
-        font-weight: map-get($display, font-weight);
-        color: $display; 
+        font-weight: 900px;
+        color: rgb(68, 65, 137); 
        }  
 
  body {
@@ -32,7 +73,7 @@ p {
 .informacion_titulo {
     h1 {
         @extend %flex;
-        color: $display;
+        color: rgb(68, 65, 137);
         border: solid 1px;
     } 
 }
@@ -40,13 +81,12 @@ p {
 .grupo {
     display: grid;
     grid-template-columns: auto auto auto;
-    grid-auto-rows: 600px;
-    transition: all 1s;  
+    grid-auto-rows: 600px;  
     padding: 50px;
 
     p {
-        color: $display;
-        font-size: $display;
+        color: rgb(68, 65, 137);
+        font-size: 24px;
         }
 
     .cajita {
@@ -64,7 +104,7 @@ p {
          h1 {
              margin-top: 20px;
              @extend %flex;
-             color: $display;
+             color: rgb(68, 65, 137);
              border: solid 1px;
          }
 }
@@ -83,11 +123,11 @@ p {
 .grupo:hover {
     .cajita:hover{ 
      box-shadow: 1px 1px 3px 1px rgb(0, 0, 0);
-    transform: scale(1.1);
+    transform: scale(1.05);
     }
 
     .cajita2:hover {  box-shadow: 1px 1px 3px 1px rgb(0, 0, 0);
-    transform: scale(1.1);
+    transform: scale(1.05);
 
     }
 
@@ -98,8 +138,8 @@ a:hover {
 }
 
 footer {
-    background-color: $display;
-    border: 1px solid $display;
+    background-color: rgb(32, 24, 44);
+    border: 1px solid rgb(68, 65, 137);
 
     p {
         text-align: center;
@@ -126,25 +166,26 @@ footer {
 .contacto_titulo {
             h1 {
                 text-align: center;
-                color: $display;
+                color: rgb(68, 65, 137);
                 border: solid 1px;
             }
 }
 
 .contacto {
-    @extend grid;
+    display: grid;
+    grid-template-columns: 1fr;
 
     .formulario {
         margin-top: 100px;
         padding: 50px;
-        @include flex(flex, center, flex-end);
+        @include flex(flex, center, center);
     }
     
     label {
     
-    background-color: $display;
-    font-size: $display;
-     color: $display;
+    background-color: rgb(32, 24, 44);
+    font-size: 24px;
+     color: rgb(68, 65, 137);
 
 }
 
@@ -160,11 +201,14 @@ input {
 .imagen_contacto {
     display: grid;
     grid-row: span 2;
+    grid-column: span 3;
     background-image: url(images/individuales_chicos/contacto.jpeg);
     background-size: cover;
+    width: 100%;
+    padding: 300px;
      h1 {
-        @extend %flex;
-        color: $display;
+        @extend %flex2;
+        color: rgb(68, 65, 137);
       }
 }
 
@@ -185,7 +229,7 @@ input {
     .texto {
         display: grid;
         grid-row: span 2;
-        background-color: $display;
+        background-color: rgb(32, 24, 44);
         
         p {
             @extend %flex;
@@ -221,36 +265,40 @@ input {
              font-size: 24px;
          }
     }
+
+
  .ubicacion {
-     @extend grid;
+     grid-template-columns: 1fr 1fr 1fr;
     .texto_ubicacion {
-        grid-column: span 2;
-        grid-row: 1;
+        grid-column: span 3;
+        grid-row: 3;
         
         h1 {
            @extend %flex;
-           color: $display;
+           color: rgb(68, 65, 137);
            border: solid 1px;
         }
 } 
  .imagen_ubicacion {
      grid-column: span 2;
-     grid-row: span 1;
+     grid-row: span 2;
         img{ 
             width: 100%;
             height: 100%;
             padding: 50px;
-            margin-bottom: 100px;
+            margin-left: 1px;
             
         }  
  }
   
  .mapa {
+     grid-row: 3;
+     grid-column: 3;
      width: 100%;
-     height: 100px;
+     height: 100%;
      padding: 50px;
      iframe {
-         width: 100px;
+         width: 100%;
      }
  }
   
@@ -261,19 +309,46 @@ input {
           nav {
         li {
             display: flex;
-              flex-direction: row;
+            flex-direction: column;
                        }
        }
 
+       .grupo {
+        display: flex;
+        flex-direction: column;
+       } 
+
        .padre_galeria {
-              img {
                   display: flex;
-                  align-items: flex-end;
+                  flex-direction: column;
               }
+
+              img {
+                  width: 100px;
+              }
+
+             .contacto {
+                 label {
+                    display: flex;
+                    flex-direction: column;
+                 }
+
+                 input {
+                    display: flex;
+                    flex-direction: column;
+                 }
+             } 
+
+             .spy {
+                 display: flex;
+                 flex-direction: column;
+             }
        }
        
+
+
             
- }
+ 
 
 
  
