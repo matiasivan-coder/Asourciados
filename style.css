@@ -23,7 +23,7 @@
   transition: all 0.5s linear;
 }
 
-.grupo .cajita h3, .grupo .cajita2 h3 {
+.grupo .cajita h2, .grupo .cajita2 h2 {
   color: #4c4cb1;
 }
 
@@ -58,6 +58,7 @@
 header {
   text-align: end;
   background: #271f40;
+  background: cover;
 }
 
 p {
@@ -70,10 +71,11 @@ p {
 body {
   background: #221252;
   background: linear-gradient(94deg, #221252 0%, #201834 51%, #1e114d 100%);
+  background: cover;
 }
 
 .informacion_titulo h1 {
-  color: #444189;
+  color: #4c4cb1;
   border: solid 1px;
 }
 
@@ -93,18 +95,17 @@ body {
 
 .galeria_introduccion h1 {
   margin-top: 20px;
-  color: #444189;
+  color: #4c4cb1;
   border: solid 1px;
 }
 
 .padre_galeria {
-  margin-top: 50px;
-  padding: 20px;
+  margin-top: 35px;
 }
 
 .padre_galeria img {
-  width: 500px;
-  padding: 9px;
+  width: 350px;
+  padding: 20px;
   -webkit-transition: all 1s;
   transition: all 1s;
 }
@@ -131,6 +132,7 @@ a:hover {
 footer {
   background-color: #20182c;
   border: 1px solid #444189;
+  background: cover;
 }
 
 footer p {
@@ -203,7 +205,7 @@ footer a {
   background-image: url(images/individuales_chicos/contacto.jpeg);
   background-size: cover;
   width: 100%;
-  padding: 300px;
+  padding: 200px;
 }
 
 .contacto .imagen_contacto h1 {
@@ -293,14 +295,8 @@ footer a {
 }
 
 @media (max-width: 1000px) {
-  nav li {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+  .navbar-toggler {
+    background-color: #402a61;
   }
   .grupo {
     display: -webkit-box;
@@ -341,7 +337,7 @@ footer a {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .spy {
+  .imagen {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -349,6 +345,29 @@ footer a {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .imagen .spy {
+    background: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+  }
+  .imagen .spy h3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    margin-left: 220px;
+    width: 10px;
+  }
+  .imagen .spy .texto {
+    background: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */
