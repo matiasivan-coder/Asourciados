@@ -61,6 +61,10 @@ header {
   background: cover;
 }
 
+header nav .navbar-toggler {
+  background-color: #402767;
+}
+
 p {
   list-style: none;
   font-family: Arial, Helvetica, sans-serif;
@@ -295,9 +299,6 @@ footer a {
 }
 
 @media (max-width: 1000px) {
-  .navbar-toggler {
-    background-color: #402a61;
-  }
   .grupo {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -368,6 +369,29 @@ footer a {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 100%;
+  }
+  .contacto {
+    width: 10;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contacto .formulario {
+    display: -ms-grid;
+    display: grid;
+    grid-row: span 1;
+    grid-column: span 1;
+  }
+  .contacto .imagen_contacto {
+    display: -ms-grid;
+    display: grid;
+    grid-row: span 1;
+    grid-column: span 1;
+    background-position: 500px;
   }
 }
 /*# sourceMappingURL=style.css.map */

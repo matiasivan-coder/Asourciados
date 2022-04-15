@@ -47,7 +47,6 @@
            align-items: $alinear;
        }
 
-      
     
 
 
@@ -56,6 +55,12 @@ header {
     text-align: end;
     background: rgb(39, 31, 64);
     background: cover;
+
+     nav {
+        .navbar-toggler{ 
+            background-color: rgb(64, 39, 103);
+        }
+     }
 }
 
 p {
@@ -308,9 +313,6 @@ input {
  
 
  @media (max-width: 1000px){
-       .navbar-toggler{ 
-           background-color: rgb(64, 42, 97);
-       }
 
        .grupo {
         display: flex;
@@ -362,6 +364,25 @@ input {
                    background-position: 100%;
                 }
             }
+             }
+
+             .contacto {
+                 width: 10;
+                 display: flex;
+                 flex-direction: column;
+                       
+                 .formulario {
+                    display: grid;
+                    grid-row: span 1;
+                    grid-column: span 1;
+                 }
+
+                 .imagen_contacto {
+                    display: grid;
+                    grid-row: span 1;
+                    grid-column: span 1;
+                    background-position: 500px;
+                 }
              }
        }
        
