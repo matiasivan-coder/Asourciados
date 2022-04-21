@@ -169,7 +169,7 @@ footer a {
 
 .contacto_titulo h1 {
   text-align: center;
-  color: #444189;
+  color: #4c4cb1;
   border: solid 1px;
 }
 
@@ -199,7 +199,7 @@ footer a {
   margin-bottom: 10px;
   background-color: #20182c;
   font-size: 24px;
-  color: #444189;
+  color: #4c4cb1;
 }
 
 .contacto input {
@@ -241,7 +241,9 @@ footer a {
 
 .imagen .texto p {
   margin-left: 100px;
+  margin-right: 50px;
   font-size: 52px;
+  color: #4c4cb1;
 }
 
 .imagen .spy {
@@ -274,7 +276,7 @@ footer a {
 }
 
 .ubicacion .texto_ubicacion h1 {
-  color: #444189;
+  color: #4c4cb1;
   border: solid 1px;
 }
 

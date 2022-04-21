@@ -178,7 +178,7 @@ footer {
 .contacto_titulo {
             h1 {
                 text-align: center;
-                color: rgb(68, 65, 137);
+                color: rgb(76, 76, 177);
                 border: solid 1px;
             }
 }
@@ -198,7 +198,7 @@ footer {
      margin-bottom: 10px;
     background-color: rgb(32, 24, 44);
     font-size: 24px;
-    color: rgb(68, 65, 137);
+    color: rgb(76, 76, 177);
 
     }
 
@@ -246,7 +246,9 @@ footer {
         p {
             @extend %flex;
             margin-left: 100px;
+            margin-right: 50px;
             font-size: 52px;
+            color: rgb(76, 76, 177);
         }
         
      
@@ -287,7 +289,7 @@ footer {
         
         h1 {
            @extend %flex;
-           color: rgb(68, 65, 137);
+           color: rgb(76, 76, 177);
            border: solid 1px;
         }
 } 
